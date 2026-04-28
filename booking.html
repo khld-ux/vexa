@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEXA — Book a Call</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="fade-in">
+
+  <nav class="navbar">
+    <a href="../home.html" class="nav-logo">VEXA<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="casestudies.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="booking.html" class="nav-cta active">Start Project</a>
+  </nav>
+
+  <section class="hero">
+    <div class="glow-bg hero-glow"></div>
+    <h1>Book Your <span class="text-blue">Strategy Session.</span></h1>
+    <p>Select a time and provide some details about your business so we can come prepared with a growth plan.</p>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="booking-card" id="booking-form">
+        
+        <div class="step-dots">
+          <div class="step-dot active"></div><div class="step-line"></div>
+          <div class="step-dot"></div><div class="step-line"></div>
+          <div class="step-dot"></div>
+        </div>
+
+        <!-- Step 1: Service -->
+        <div class="form-step active" id="step-1">
+          <h3 class="svc-title" style="font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">What do you need help with?</h3>
+          <div class="grid-2">
+            <div class="svc-option">Paid Advertising</div>
+            <div class="svc-option">Brand Strategy</div>
+            <div class="svc-option">Content Creation</div>
+            <div class="svc-option">Full Growth Suite</div>
+          </div>
+          <div class="flex-center mt-4">
+            <button class="btn-primary" data-next="2">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Details -->
+        <div class="form-step" id="step-2">
+          <div class="grid-2">
+            <div class="form-group"><label>First Name</label><input type="text" id="b-fname" class="form-control"></div>
+            <div class="form-group"><label>Last Name</label><input type="text" id="b-lname" class="form-control"></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" id="b-email" class="form-control"></div>
+          <div class="form-group"><label>Company Name</label><input type="text" id="b-company" class="form-control"></div>
+          <div class="flex-center gap-2 mt-4">
+            <button class="btn-outline" data-back="1">Back</button>
+            <button class="btn-primary" data-next="3">Select Time</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Calendar -->
+        <div class="form-step" id="step-3">
+          <h3 class="svc-title" style="text-align: center;">Available Times</h3>
+          <div class="time-grid">
+            <div class="time-slot">09:00 AM</div><div class="time-slot">10:30 AM</div>
+            <div class="time-slot unavail">01:00 PM</div><div class="time-slot">03:30 PM</div>
+          </div>
+          <div class="flex-center gap-2 mt-4">
+            <button class="btn-outline" data-back="2">Back</button>
+            <button class="btn-primary" id="submit-booking">Confirm Booking</button>
+          </div>
+        </div>
+
+        <!-- Success Message -->
+        <div id="booking-success" style="display:none; flex-direction:column; align-items:center; text-align:center;">
+          <div class="svc-icon" style="width:60px; height:60px; font-size:2rem;">✓</div>
+          <h2 class="section-title">Booking Confirmed!</h2>
+          <p class="text-gray" id="booking-details"></p>
+          <a href="../home.html" class="btn-outline mt-3">Back to Home</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">VEXA<span>.</span></div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="casestudies.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 VEXA Marketing Agency. All rights reserved.</div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
